@@ -1,0 +1,540 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj",
+        "projectName": "Bytestrone.AppraisalSystem.Core",
+        "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj",
+        "packagesPath": "C:\\Users\\SreejithK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
+          "C:\\Users\\SreejithK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.GuardClauses": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.Result": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.SharedKernel": {
+              "target": "Package",
+              "version": "[1.6.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.SmartEnum": {
+              "target": "Package",
+              "version": "[8.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.Specification": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.GuardClauses": "5.0.0",
+            "Ardalis.HttpClientTestExtensions": "4.2.0",
+            "Ardalis.ListStartupServices": "1.1.4",
+            "Ardalis.Result": "10.0.0",
+            "Ardalis.Result.AspNetCore": "10.0.0",
+            "Ardalis.SharedKernel": "1.6.0",
+            "Ardalis.SmartEnum": "8.1.0",
+            "Ardalis.Specification": "8.0.0",
+            "Ardalis.Specification.EntityFrameworkCore": "8.0.0",
+            "Azure.Identity": "1.12.1",
+            "BCrypt.Net-Next": "4.0.3",
+            "coverlet.collector": "6.0.2",
+            "CsvHelper": "33.0.1",
+            "FastEndpoints": "5.30.0",
+            "FastEndpoints.ApiExplorer": "2.2.0",
+            "FastEndpoints.Swagger": "5.30.0",
+            "FastEndpoints.Swagger.Swashbuckle": "2.2.0",
+            "FirebaseAdmin": "3.1.0",
+            "FlatFile": "0.2.51",
+            "FluentAssertions": "6.12.1",
+            "Google.Cloud.Storage.V1": "4.10.0",
+            "MailKit": "4.8.0",
+            "MediatR": "12.4.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+            "Microsoft.AspNetCore.Http": "2.2.2",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+            "Microsoft.AspNetCore.Mvc.Testing": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "8.0.8",
+            "Microsoft.EntityFrameworkCore.InMemory": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
+            "Microsoft.EntityFrameworkCore.Sqlite": "8.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "8.0.8",
+            "Microsoft.Extensions.Configuration": "8.0.0",
+            "Microsoft.Extensions.Logging": "8.0.1",
+            "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+            "Microsoft.NET.Test.Sdk": "17.11.1",
+            "moq": "4.20.72",
+            "Newtonsoft.Json": "13.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.10",
+            "NSubstitute": "5.1.0",
+            "ReportGenerator": "5.3.10",
+            "Serilog.AspNetCore": "8.0.2",
+            "SQLite": "3.13.0",
+            "Swashbuckle.AspNetCore": "6.5.0",
+            "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.IdentityModel.Tokens.Jwt": "8.2.1",
+            "xunit": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj",
+        "projectName": "Bytestrone.AppraisalSystem.Infrastructure",
+        "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\SreejithK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
+          "C:\\Users\\SreejithK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj": {
+                "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj"
+              },
+              "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj": {
+                "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.SharedKernel": {
+              "target": "Package",
+              "version": "[1.6.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Ardalis.Specification.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Azure.Identity": {
+              "target": "Package",
+              "version": "[1.12.1, )",
+              "versionCentrallyManaged": true
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "FirebaseAdmin": {
+              "target": "Package",
+              "version": "[3.1.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Google.Cloud.Storage.V1": {
+              "target": "Package",
+              "version": "[4.10.0, )",
+              "versionCentrallyManaged": true
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.8.0, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.10, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.1, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )",
+              "versionCentrallyManaged": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.10, )",
+              "versionCentrallyManaged": true
+            },
+            "SQLite": {
+              "target": "Package",
+              "version": "[3.13.0, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.GuardClauses": "5.0.0",
+            "Ardalis.HttpClientTestExtensions": "4.2.0",
+            "Ardalis.ListStartupServices": "1.1.4",
+            "Ardalis.Result": "10.0.0",
+            "Ardalis.Result.AspNetCore": "10.0.0",
+            "Ardalis.SharedKernel": "1.6.0",
+            "Ardalis.SmartEnum": "8.1.0",
+            "Ardalis.Specification": "8.0.0",
+            "Ardalis.Specification.EntityFrameworkCore": "8.0.0",
+            "Azure.Identity": "1.12.1",
+            "BCrypt.Net-Next": "4.0.3",
+            "coverlet.collector": "6.0.2",
+            "CsvHelper": "33.0.1",
+            "FastEndpoints": "5.30.0",
+            "FastEndpoints.ApiExplorer": "2.2.0",
+            "FastEndpoints.Swagger": "5.30.0",
+            "FastEndpoints.Swagger.Swashbuckle": "2.2.0",
+            "FirebaseAdmin": "3.1.0",
+            "FlatFile": "0.2.51",
+            "FluentAssertions": "6.12.1",
+            "Google.Cloud.Storage.V1": "4.10.0",
+            "MailKit": "4.8.0",
+            "MediatR": "12.4.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+            "Microsoft.AspNetCore.Http": "2.2.2",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+            "Microsoft.AspNetCore.Mvc.Testing": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "8.0.8",
+            "Microsoft.EntityFrameworkCore.InMemory": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
+            "Microsoft.EntityFrameworkCore.Sqlite": "8.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "8.0.8",
+            "Microsoft.Extensions.Configuration": "8.0.0",
+            "Microsoft.Extensions.Logging": "8.0.1",
+            "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+            "Microsoft.NET.Test.Sdk": "17.11.1",
+            "moq": "4.20.72",
+            "Newtonsoft.Json": "13.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.10",
+            "NSubstitute": "5.1.0",
+            "ReportGenerator": "5.3.10",
+            "Serilog.AspNetCore": "8.0.2",
+            "SQLite": "3.13.0",
+            "Swashbuckle.AspNetCore": "6.5.0",
+            "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.IdentityModel.Tokens.Jwt": "8.2.1",
+            "xunit": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj",
+        "projectName": "Bytestrone.AppraisalSystem.UseCases",
+        "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj",
+        "packagesPath": "C:\\Users\\SreejithK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\obj\\",
+        "projectStyle": "PackageReference",
+        "centralPackageVersionsManagementEnabled": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
+          "C:\\Users\\SreejithK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj": {
+                "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Core\\Bytestrone.AppraisalSystem.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "allWarningsAsErrors": true,
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Ardalis.Result": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "versionCentrallyManaged": true
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.4.1, )",
+              "versionCentrallyManaged": true
+            }
+          },
+          "centralPackageVersions": {
+            "Ardalis.GuardClauses": "5.0.0",
+            "Ardalis.HttpClientTestExtensions": "4.2.0",
+            "Ardalis.ListStartupServices": "1.1.4",
+            "Ardalis.Result": "10.0.0",
+            "Ardalis.Result.AspNetCore": "10.0.0",
+            "Ardalis.SharedKernel": "1.6.0",
+            "Ardalis.SmartEnum": "8.1.0",
+            "Ardalis.Specification": "8.0.0",
+            "Ardalis.Specification.EntityFrameworkCore": "8.0.0",
+            "Azure.Identity": "1.12.1",
+            "BCrypt.Net-Next": "4.0.3",
+            "coverlet.collector": "6.0.2",
+            "CsvHelper": "33.0.1",
+            "FastEndpoints": "5.30.0",
+            "FastEndpoints.ApiExplorer": "2.2.0",
+            "FastEndpoints.Swagger": "5.30.0",
+            "FastEndpoints.Swagger.Swashbuckle": "2.2.0",
+            "FirebaseAdmin": "3.1.0",
+            "FlatFile": "0.2.51",
+            "FluentAssertions": "6.12.1",
+            "Google.Cloud.Storage.V1": "4.10.0",
+            "MailKit": "4.8.0",
+            "MediatR": "12.4.1",
+            "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+            "Microsoft.AspNetCore.Http": "2.2.2",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+            "Microsoft.AspNetCore.Mvc.Testing": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Design": "8.0.8",
+            "Microsoft.EntityFrameworkCore.InMemory": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Relational": "8.0.10",
+            "Microsoft.EntityFrameworkCore.Sqlite": "8.0.8",
+            "Microsoft.EntityFrameworkCore.SqlServer": "8.0.8",
+            "Microsoft.EntityFrameworkCore.Tools": "8.0.8",
+            "Microsoft.Extensions.Configuration": "8.0.0",
+            "Microsoft.Extensions.Logging": "8.0.1",
+            "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+            "Microsoft.Extensions.Options.ConfigurationExtensions": "8.0.0",
+            "Microsoft.NET.Test.Sdk": "17.11.1",
+            "moq": "4.20.72",
+            "Newtonsoft.Json": "13.0.3",
+            "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.10",
+            "NSubstitute": "5.1.0",
+            "ReportGenerator": "5.3.10",
+            "Serilog.AspNetCore": "8.0.2",
+            "SQLite": "3.13.0",
+            "Swashbuckle.AspNetCore": "6.5.0",
+            "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+            "System.IdentityModel.Tokens.Jwt": "8.2.1",
+            "xunit": "2.9.2",
+            "xunit.runner.visualstudio": "2.8.2"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

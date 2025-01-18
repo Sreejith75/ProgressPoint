@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "Hash": "FnLlyVWWhN+H2O2E40XlZlhXQnr8egVP1kyOfJV19+A=",
+  "Source": "Bytestrone.AppraisalSystem.Web",
+  "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Bytestrone.AppraisalSystem.Web\\wwwroot",
+      "Source": "Bytestrone.AppraisalSystem.Web",
+      "ContentRoot": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\wwwroot\\",
+      "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\wwwroot\\.gitkeep",
+      "SourceId": "Bytestrone.AppraisalSystem.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\wwwroot\\",
+      "BasePath": "_content/Bytestrone.AppraisalSystem.Web",
+      "RelativePath": "#[.{fingerprint}]?.gitkeep",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.gitkeep"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": ".5ipweew5fc.gitkeep",
+      "AssetFile": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\wwwroot\\.gitkeep",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 17:01:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": ".gitkeep"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": ".gitkeep",
+      "AssetFile": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\wwwroot\\.gitkeep",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 11 Nov 2024 17:01:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    }
+  ]
+}

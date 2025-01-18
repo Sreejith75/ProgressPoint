@@ -1,0 +1,285 @@
+2025-01-14 22:28:20.379 +05:30 [INF] Registered 46 endpoints in 245 milliseconds.
+2025-01-14 22:28:22.315 +05:30 [INF] Executed DbCommand (101ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2025-01-14 22:28:22.673 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2025-01-14 22:28:22.728 +05:30 [INF] User profile is available. Using 'C:\Users\SreejithK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-14 22:28:22.921 +05:30 [INF] Now listening on: https://localhost:57679
+2025-01-14 22:28:22.922 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-14 22:28:22.923 +05:30 [INF] Hosting environment: Development
+2025-01-14 22:28:22.924 +05:30 [INF] Content root path: C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.web
+2025-01-14 22:28:26.751 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/user/login - null null
+2025-01-14 22:28:26.789 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:26.793 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/user/login - 204 null null 43.4205ms
+2025-01-14 22:28:26.799 +05:30 [INF] Request starting HTTP/2 POST https://localhost:57679/user/login - application/json 56
+2025-01-14 22:28:26.804 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:26.831 +05:30 [INF] Executing endpoint 'HTTP: POST /user/login'
+2025-01-14 22:28:26.866 +05:30 [INF] Handling LoginCommand
+2025-01-14 22:28:26.867 +05:30 [INF] Property Email : jishadavis@gmail.com
+2025-01-14 22:28:26.868 +05:30 [INF] Property Password : Bytestrone
+2025-01-14 22:28:27.034 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-01-14 22:28:27.065 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Email", t."EmployeeRoleId", t."FirstName", t."IsActive", t."LastName", t."ModifiedOn", t."PasswordHash", t."PhoneNumber", t0."EmployeeId", t0."SystemRoleId", t0."Id", t0.description, t0.role_name, t0."SystemRoleId0", t0."PermissionId", t0."Id0", t0."PermissionCode", t0."PermissionName"
+FROM (
+    SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber"
+    FROM employees AS e
+    WHERE e."Email" = @__email_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT e0."EmployeeId", e0."SystemRoleId", s."Id", s.description, s.role_name, t1."SystemRoleId" AS "SystemRoleId0", t1."PermissionId", t1."Id" AS "Id0", t1."PermissionCode", t1."PermissionName"
+    FROM employees_systemroles_mapping AS e0
+    INNER JOIN system_roles AS s ON e0."SystemRoleId" = s."Id"
+    LEFT JOIN (
+        SELECT s0."SystemRoleId", s0."PermissionId", p."Id", p."PermissionCode", p."PermissionName"
+        FROM systemrole_permissions AS s0
+        INNER JOIN permissions AS p ON s0."PermissionId" = p."Id"
+    ) AS t1 ON s."Id" = t1."SystemRoleId"
+) AS t0 ON t."Id" = t0."EmployeeId"
+ORDER BY t."Id", t0."EmployeeId", t0."SystemRoleId", t0."Id", t0."SystemRoleId0", t0."PermissionId"
+2025-01-14 22:28:27.448 +05:30 [INF] Handled LoginCommand with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Login.LoginResponseDto] in 578 ms
+2025-01-14 22:28:27.455 +05:30 [INF] Executed endpoint 'HTTP: POST /user/login'
+2025-01-14 22:28:27.463 +05:30 [INF] Request finished HTTP/2 POST https://localhost:57679/user/login - 200 null application/json; charset=utf-8 663.6184ms
+2025-01-14 22:28:34.124 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:28:34.124 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:28:34.128 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:34.133 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 8.8476ms
+2025-01-14 22:28:34.135 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:34.147 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 22.6567ms
+2025-01-14 22:28:34.149 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:28:34.175 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:34.321 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:28:34.372 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2025-01-14 22:28:34.567 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2025-01-14 22:28:34.652 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 276 ms
+2025-01-14 22:28:34.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:28:34.673 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:28:34.676 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:34.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 530.5528ms
+2025-01-14 22:28:34.683 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:28:34.685 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2025-01-14 22:28:34.691 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2025-01-14 22:28:34.698 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 9 ms
+2025-01-14 22:28:34.701 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:28:34.703 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 32.2192ms
+2025-01-14 22:28:49.763 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/Employees/details/19 - null null
+2025-01-14 22:28:49.764 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/Employees/details/19 - null null
+2025-01-14 22:28:49.768 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:49.772 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/Employees/details/19 - 204 null null 8.7161ms
+2025-01-14 22:28:49.772 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:49.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/details/19 - null null
+2025-01-14 22:28:49.778 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/Employees/details/19 - 204 null null 13.0073ms
+2025-01-14 22:28:49.786 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:49.793 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/details/{EmployeeId:int}'
+2025-01-14 22:28:49.826 +05:30 [INF] Handling GetEmployeeDetailsQuery
+2025-01-14 22:28:49.829 +05:30 [INF] Property EmployeeId : 19
+2025-01-14 22:28:49.892 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-01-14 22:28:49.919 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Email", t."EmployeeRoleId", t."FirstName", t."IsActive", t."LastName", t."ModifiedOn", t."PasswordHash", t."PhoneNumber", t."Id0", t."Id1", e1."Id", e1."Appraiser_Id", e1."ChangedReason", e1."EffectiveDate", e1."Appraisee_Id", e1."EndDate", e1."Status", e2."Id", e2."Appraiser_Id", e2."ChangedReason", e2."EffectiveDate", e2."Appraisee_Id", e2."EndDate", e2."Status", t."departmentId", t."EmployeeRoleCode", t."HierarchyLevel", t."RoleName", t."DepartmentName"
+FROM (
+    SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber", e0."Id" AS "Id0", e0."departmentId", e0."EmployeeRoleCode", e0."HierarchyLevel", e0."RoleName", d."Id" AS "Id1", d."DepartmentName"
+    FROM employees AS e
+    INNER JOIN employee_roles AS e0 ON e."EmployeeRoleId" = e0."Id"
+    INNER JOIN department AS d ON e0."departmentId" = d."Id"
+    WHERE e."Id" = @__Id_0
+    LIMIT 1
+) AS t
+LEFT JOIN employee_appraiser_mappings AS e1 ON t."Id" = e1."Appraisee_Id"
+LEFT JOIN employee_appraiser_mappings AS e2 ON t."Id" = e2."Appraiser_Id"
+ORDER BY t."Id", t."Id0", t."Id1", e1."Id"
+2025-01-14 22:28:50.080 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."Status", a."SummaryId", a0."Id", a0."AppraiseeScore", a0."AppraiserScore", a0."CycleId", a0."EmployeeId", a0."PerformanceBucket", a1."Id", a2."Id", a2."AppraiseeComment", a2."AppraiseeRating", a2."AppraiserComment", a2."AppraiserRating", a2."FeedbackId", a2."QuestionId", a2."Status", a2."Artifact_FilePath", a2."Artifact_FileType", a1."Quarter", a1."Status", a1."Year", a1."AppraiseeDateRange_EndDate", a1."AppraiseeDateRange_StartDate", a1."AppraiserDateRange_EndDate", a1."AppraiserDateRange_StartDate"
+FROM appraisal_feedbacks AS a
+LEFT JOIN appraisal_summaries AS a0 ON a."SummaryId" = a0."Id"
+INNER JOIN appraisal_cycle AS a1 ON a."CycleId" = a1."Id"
+LEFT JOIN appraisal_feedback_details AS a2 ON a."Id" = a2."FeedbackId"
+WHERE a."EmployeeId" = @__EmployeeId_0
+ORDER BY a."Id", a0."Id", a1."Id"
+2025-01-14 22:28:50.101 +05:30 [INF] Handled GetEmployeeDetailsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDetailsDTO] in 268 ms
+2025-01-14 22:28:50.126 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/details/{EmployeeId:int}'
+2025-01-14 22:28:50.128 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/details/19 - 200 null application/json; charset=utf-8 352.9313ms
+2025-01-14 22:28:50.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees/details/19 - null null
+2025-01-14 22:28:50.140 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:50.142 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees/details/{EmployeeId:int}'
+2025-01-14 22:28:50.145 +05:30 [INF] Handling GetEmployeeDetailsQuery
+2025-01-14 22:28:50.146 +05:30 [INF] Property EmployeeId : 19
+2025-01-14 22:28:50.162 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Email", t."EmployeeRoleId", t."FirstName", t."IsActive", t."LastName", t."ModifiedOn", t."PasswordHash", t."PhoneNumber", t."Id0", t."Id1", e1."Id", e1."Appraiser_Id", e1."ChangedReason", e1."EffectiveDate", e1."Appraisee_Id", e1."EndDate", e1."Status", e2."Id", e2."Appraiser_Id", e2."ChangedReason", e2."EffectiveDate", e2."Appraisee_Id", e2."EndDate", e2."Status", t."departmentId", t."EmployeeRoleCode", t."HierarchyLevel", t."RoleName", t."DepartmentName"
+FROM (
+    SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber", e0."Id" AS "Id0", e0."departmentId", e0."EmployeeRoleCode", e0."HierarchyLevel", e0."RoleName", d."Id" AS "Id1", d."DepartmentName"
+    FROM employees AS e
+    INNER JOIN employee_roles AS e0 ON e."EmployeeRoleId" = e0."Id"
+    INNER JOIN department AS d ON e0."departmentId" = d."Id"
+    WHERE e."Id" = @__Id_0
+    LIMIT 1
+) AS t
+LEFT JOIN employee_appraiser_mappings AS e1 ON t."Id" = e1."Appraisee_Id"
+LEFT JOIN employee_appraiser_mappings AS e2 ON t."Id" = e2."Appraiser_Id"
+ORDER BY t."Id", t."Id0", t."Id1", e1."Id"
+2025-01-14 22:28:50.176 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."Status", a."SummaryId", a0."Id", a0."AppraiseeScore", a0."AppraiserScore", a0."CycleId", a0."EmployeeId", a0."PerformanceBucket", a1."Id", a2."Id", a2."AppraiseeComment", a2."AppraiseeRating", a2."AppraiserComment", a2."AppraiserRating", a2."FeedbackId", a2."QuestionId", a2."Status", a2."Artifact_FilePath", a2."Artifact_FileType", a1."Quarter", a1."Status", a1."Year", a1."AppraiseeDateRange_EndDate", a1."AppraiseeDateRange_StartDate", a1."AppraiserDateRange_EndDate", a1."AppraiserDateRange_StartDate"
+FROM appraisal_feedbacks AS a
+LEFT JOIN appraisal_summaries AS a0 ON a."SummaryId" = a0."Id"
+INNER JOIN appraisal_cycle AS a1 ON a."CycleId" = a1."Id"
+LEFT JOIN appraisal_feedback_details AS a2 ON a."Id" = a2."FeedbackId"
+WHERE a."EmployeeId" = @__EmployeeId_0
+ORDER BY a."Id", a0."Id", a1."Id"
+2025-01-14 22:28:50.183 +05:30 [INF] Handled GetEmployeeDetailsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Employees.EmployeeDetailsDTO] in 34 ms
+2025-01-14 22:28:50.187 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees/details/{EmployeeId:int}'
+2025-01-14 22:28:50.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees/details/19 - 200 null application/json; charset=utf-8 62.491ms
+2025-01-14 22:28:58.922 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/Employees - null null
+2025-01-14 22:28:58.925 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/Employees - null null
+2025-01-14 22:28:58.928 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:58.931 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:58.932 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/Employees - 204 null null 10.1643ms
+2025-01-14 22:28:58.933 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/Employees - 204 null null 8.6806ms
+2025-01-14 22:28:58.936 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees - null null
+2025-01-14 22:28:58.951 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:58.955 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees'
+2025-01-14 22:28:58.963 +05:30 [INF] Handling ListEmployeeQuery
+2025-01-14 22:28:59.012 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2025-01-14 22:28:59.041 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber", e0."Id", d."Id", e1."Id", e1."Appraiser_Id", e1."ChangedReason", e1."EffectiveDate", e1."Appraisee_Id", e1."EndDate", e1."Status", e2."Id", e2."Appraiser_Id", e2."ChangedReason", e2."EffectiveDate", e2."Appraisee_Id", e2."EndDate", e2."Status", e0."departmentId", e0."EmployeeRoleCode", e0."HierarchyLevel", e0."RoleName", d."DepartmentName", e3."EmployeeId", e3."SystemRoleId"
+FROM employees AS e
+INNER JOIN employee_roles AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN department AS d ON e0."departmentId" = d."Id"
+LEFT JOIN employee_appraiser_mappings AS e1 ON e."Id" = e1."Appraiser_Id"
+LEFT JOIN employee_appraiser_mappings AS e2 ON e."Id" = e2."Appraisee_Id"
+LEFT JOIN employees_systemroles_mapping AS e3 ON e."Id" = e3."EmployeeId"
+ORDER BY e."Id", e0."Id", d."Id", e1."Id", e2."Id", e3."EmployeeId"
+2025-01-14 22:28:59.066 +05:30 [INF] Handled ListEmployeeQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.Employees.List.EmployeeDetailsDisplayDTO]] in 100 ms
+2025-01-14 22:28:59.084 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees'
+2025-01-14 22:28:59.088 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees - 200 null application/json; charset=utf-8 151.9095ms
+2025-01-14 22:28:59.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/Employees - null null
+2025-01-14 22:28:59.101 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:28:59.104 +05:30 [INF] Executing endpoint 'HTTP: GET /Employees'
+2025-01-14 22:28:59.108 +05:30 [INF] Handling ListEmployeeQuery
+2025-01-14 22:28:59.114 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber", e0."Id", d."Id", e1."Id", e1."Appraiser_Id", e1."ChangedReason", e1."EffectiveDate", e1."Appraisee_Id", e1."EndDate", e1."Status", e2."Id", e2."Appraiser_Id", e2."ChangedReason", e2."EffectiveDate", e2."Appraisee_Id", e2."EndDate", e2."Status", e0."departmentId", e0."EmployeeRoleCode", e0."HierarchyLevel", e0."RoleName", d."DepartmentName", e3."EmployeeId", e3."SystemRoleId"
+FROM employees AS e
+INNER JOIN employee_roles AS e0 ON e."EmployeeRoleId" = e0."Id"
+INNER JOIN department AS d ON e0."departmentId" = d."Id"
+LEFT JOIN employee_appraiser_mappings AS e1 ON e."Id" = e1."Appraiser_Id"
+LEFT JOIN employee_appraiser_mappings AS e2 ON e."Id" = e2."Appraisee_Id"
+LEFT JOIN employees_systemroles_mapping AS e3 ON e."Id" = e3."EmployeeId"
+ORDER BY e."Id", e0."Id", d."Id", e1."Id", e2."Id", e3."EmployeeId"
+2025-01-14 22:28:59.124 +05:30 [INF] Handled ListEmployeeQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.Employees.List.EmployeeDetailsDisplayDTO]] in 14 ms
+2025-01-14 22:28:59.129 +05:30 [INF] Executed endpoint 'HTTP: GET /Employees'
+2025-01-14 22:28:59.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/Employees - 200 null application/json; charset=utf-8 42.0289ms
+2025-01-14 22:31:18.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:31:18.258 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:31:18.259 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 3.411ms
+2025-01-14 22:31:18.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:31:18.263 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:31:18.264 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:31:18.266 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2025-01-14 22:31:18.271 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2025-01-14 22:31:18.276 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 9 ms
+2025-01-14 22:31:18.277 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:31:18.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 17.8322ms
+2025-01-14 22:32:23.599 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/PerfomanceFactors/departments - null null
+2025-01-14 22:32:23.599 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/PerfomanceFactors/departments - null null
+2025-01-14 22:32:23.601 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:23.604 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:23.604 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/PerfomanceFactors/departments - 204 null null 5.7824ms
+2025-01-14 22:32:23.605 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/PerfomanceFactors/departments - 204 null null 5.6595ms
+2025-01-14 22:32:23.607 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/PerfomanceFactors/departments - null null
+2025-01-14 22:32:23.610 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:23.612 +05:30 [INF] Executing endpoint 'HTTP: GET /PerfomanceFactors/departments'
+2025-01-14 22:32:23.615 +05:30 [INF] Handling ListFactorsForDepartmentsQuery
+2025-01-14 22:32:23.634 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."DepartmentName", t."Id", t."DepartmentId", t."PerformanceFactorId", t."Weightage", t."Id0", t."FactorName"
+FROM department AS d
+LEFT JOIN (
+    SELECT d0."Id", d0."DepartmentId", d0."PerformanceFactorId", d0."Weightage", p."Id" AS "Id0", p."FactorName"
+    FROM department_performancefactor AS d0
+    INNER JOIN performance_factor AS p ON d0."PerformanceFactorId" = p."Id"
+) AS t ON d."Id" = t."DepartmentId"
+ORDER BY d."Id", t."Id"
+2025-01-14 22:32:23.652 +05:30 [INF] Handled ListFactorsForDepartmentsQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.PerformanceFactors.ListFactorsForRoles.FactorsWithDepartmentsDTO]] in 36 ms
+2025-01-14 22:32:23.659 +05:30 [INF] Executed endpoint 'HTTP: GET /PerfomanceFactors/departments'
+2025-01-14 22:32:23.660 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/PerfomanceFactors/departments - null null
+2025-01-14 22:32:23.660 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/PerfomanceFactors/departments - 200 null application/json; charset=utf-8 53.4617ms
+2025-01-14 22:32:23.662 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:23.665 +05:30 [INF] Executing endpoint 'HTTP: GET /PerfomanceFactors/departments'
+2025-01-14 22:32:23.666 +05:30 [INF] Handling ListFactorsForDepartmentsQuery
+2025-01-14 22:32:23.669 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."Id", d."DepartmentName", t."Id", t."DepartmentId", t."PerformanceFactorId", t."Weightage", t."Id0", t."FactorName"
+FROM department AS d
+LEFT JOIN (
+    SELECT d0."Id", d0."DepartmentId", d0."PerformanceFactorId", d0."Weightage", p."Id" AS "Id0", p."FactorName"
+    FROM department_performancefactor AS d0
+    INNER JOIN performance_factor AS p ON d0."PerformanceFactorId" = p."Id"
+) AS t ON d."Id" = t."DepartmentId"
+ORDER BY d."Id", t."Id"
+2025-01-14 22:32:23.671 +05:30 [INF] Handled ListFactorsForDepartmentsQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.PerformanceFactors.ListFactorsForRoles.FactorsWithDepartmentsDTO]] in 4 ms
+2025-01-14 22:32:23.672 +05:30 [INF] Executed endpoint 'HTTP: GET /PerfomanceFactors/departments'
+2025-01-14 22:32:23.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/PerfomanceFactors/departments - 200 null application/json; charset=utf-8 13.4175ms
+2025-01-14 22:32:31.392 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/PerformanceIndicators - null null
+2025-01-14 22:32:31.392 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/PerformanceIndicators - null null
+2025-01-14 22:32:31.397 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:31.400 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:31.401 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/PerformanceIndicators - 204 null null 9.1498ms
+2025-01-14 22:32:31.401 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/PerformanceIndicators - 204 null null 9.3958ms
+2025-01-14 22:32:31.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/PerformanceIndicators - null null
+2025-01-14 22:32:31.412 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:31.413 +05:30 [INF] Executing endpoint 'HTTP: GET /PerformanceIndicators'
+2025-01-14 22:32:31.415 +05:30 [INF] Handling ListIndicatorsQuery
+2025-01-14 22:32:31.428 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorName", p0."Id", p0."FactorId", p0."IndicatorName", p0."Weightage"
+FROM performance_factor AS p
+LEFT JOIN performance_indicator AS p0 ON p."Id" = p0."FactorId"
+ORDER BY p."Id"
+2025-01-14 22:32:31.438 +05:30 [INF] Handled ListIndicatorsQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.PerformanceFactors.ListIndicators.FactorDTO]] in 22 ms
+2025-01-14 22:32:31.442 +05:30 [INF] Executed endpoint 'HTTP: GET /PerformanceIndicators'
+2025-01-14 22:32:31.444 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/PerformanceIndicators - 200 null application/json; charset=utf-8 41.096ms
+2025-01-14 22:32:31.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/PerformanceIndicators - null null
+2025-01-14 22:32:31.447 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:32:31.448 +05:30 [INF] Executing endpoint 'HTTP: GET /PerformanceIndicators'
+2025-01-14 22:32:31.449 +05:30 [INF] Handling ListIndicatorsQuery
+2025-01-14 22:32:31.451 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorName", p0."Id", p0."FactorId", p0."IndicatorName", p0."Weightage"
+FROM performance_factor AS p
+LEFT JOIN performance_indicator AS p0 ON p."Id" = p0."FactorId"
+ORDER BY p."Id"
+2025-01-14 22:32:31.453 +05:30 [INF] Handled ListIndicatorsQuery with Ardalis.Result.Result`1[System.Collections.Generic.List`1[Bytestrone.AppraisalSystem.UseCases.PerformanceFactors.ListIndicators.FactorDTO]] in 3 ms
+2025-01-14 22:32:31.454 +05:30 [INF] Executed endpoint 'HTTP: GET /PerformanceIndicators'
+2025-01-14 22:32:31.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/PerformanceIndicators - 200 null application/json; charset=utf-8 11.1527ms
+2025-01-14 22:35:55.924 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:35:55.932 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:35:55.935 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 10.6812ms
+2025-01-14 22:35:55.937 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2025-01-14 22:35:55.948 +05:30 [INF] CORS policy execution successful.
+2025-01-14 22:35:55.952 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:35:55.955 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2025-01-14 22:35:56.040 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2025-01-14 22:35:56.049 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 90 ms
+2025-01-14 22:35:56.055 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2025-01-14 22:35:56.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 120.6737ms

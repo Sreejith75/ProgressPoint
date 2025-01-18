@@ -1,0 +1,16 @@
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\bin\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.deps.json
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\bin\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\bin\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.pdb
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\bin\Debug\net8.0\Bytestrone.AppraisalSystem.Core.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\bin\Debug\net8.0\Bytestrone.AppraisalSystem.Core.pdb
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.csproj.AssemblyReference.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.AssemblyInfoInputs.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.AssemblyInfo.cs
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.csproj.CoreCompileInputs.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.sourcelink.json
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestro.6E6FD52F.Up2Date
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\refint\Bytestrone.AppraisalSystem.UseCases.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\Bytestrone.AppraisalSystem.UseCases.pdb
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.UseCases\obj\Debug\net8.0\ref\Bytestrone.AppraisalSystem.UseCases.dll

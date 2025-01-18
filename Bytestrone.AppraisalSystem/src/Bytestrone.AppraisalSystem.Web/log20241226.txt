@@ -1,0 +1,559 @@
+2024-12-26 00:09:56.061 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:09:56.093 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:09:56.132 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:09:56.172 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:09:56.174 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:09:56.183 +05:30 [INF] Applying migration '20241225183935_AddedAppraiserIdToSummery'.
+2024-12-26 00:09:56.224 +05:30 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE appraisal_summaries DROP CONSTRAINT "FK_appraisal_summaries_employees_AppraiserId";
+2024-12-26 00:11:00.241 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:11:00.284 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:11:00.325 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:11:00.360 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:11:00.362 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:11:00.375 +05:30 [INF] Applying migration '20241225183935_AddedAppraiserIdToSummery'.
+2024-12-26 00:11:00.414 +05:30 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE appraisal_summaries ADD CONSTRAINT "FK_appraisal_summaries_employees_AppraiserId" FOREIGN KEY ("AppraiserId") REFERENCES employees ("Id") ON DELETE CASCADE;
+2024-12-26 00:13:16.448 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:13:16.486 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:13:16.532 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:13:16.579 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:13:16.581 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:13:16.593 +05:30 [INF] Applying migration '20241225184254_AddedAppraiserIdToSummery'.
+2024-12-26 00:13:16.635 +05:30 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE appraisal_summaries DROP CONSTRAINT "FK_appraisal_summaries_employees_AppraiserId";
+2024-12-26 00:23:16.429 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:23:16.469 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:23:16.522 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:23:16.563 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1 FROM pg_catalog.pg_class c
+    JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace
+    WHERE n.nspname='public' AND
+          c.relname='__EFMigrationsHistory'
+)
+2024-12-26 00:23:16.565 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2024-12-26 00:23:16.577 +05:30 [INF] Applying migration '20241225185259_AddedAppraiserIdToSummery'.
+2024-12-26 00:23:16.640 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE appraisal_summaries DROP CONSTRAINT "FK_appraisal_summaries_employees_EmployeeId";
+2024-12-26 00:23:16.647 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE appraisal_summaries ADD CONSTRAINT "FK_appraisal_summaries_employees_EmployeeId" FOREIGN KEY ("EmployeeId") REFERENCES employees ("Id") ON DELETE RESTRICT;
+2024-12-26 00:23:16.649 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20241225185259_AddedAppraiserIdToSummery', '8.0.10');
+2024-12-26 21:45:15.020 +05:30 [INF] Registered 29 endpoints in 178 milliseconds.
+2024-12-26 21:45:16.235 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-12-26 21:45:16.411 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2024-12-26 21:45:16.439 +05:30 [INF] User profile is available. Using 'C:\Users\SreejithK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-26 21:45:16.572 +05:30 [INF] Now listening on: https://localhost:57679
+2024-12-26 21:45:16.573 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-26 21:45:16.574 +05:30 [INF] Hosting environment: Development
+2024-12-26 21:45:16.575 +05:30 [INF] Content root path: C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.web
+2024-12-26 22:40:09.727 +05:30 [INF] Application is shutting down...
+2024-12-26 22:40:25.736 +05:30 [INF] Registered 30 endpoints in 1,863 milliseconds.
+2024-12-26 22:40:27.717 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-12-26 22:40:27.845 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2024-12-26 22:40:27.867 +05:30 [INF] User profile is available. Using 'C:\Users\SreejithK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-26 22:40:28.014 +05:30 [INF] Now listening on: https://localhost:57679
+2024-12-26 22:40:28.015 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-26 22:40:28.016 +05:30 [INF] Hosting environment: Development
+2024-12-26 22:40:28.017 +05:30 [INF] Content root path: C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.web
+2024-12-26 22:40:30.920 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2024-12-26 22:40:31.003 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 404 0 null 84.4459ms
+2024-12-26 22:40:31.012 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/, Response status code: 404
+2024-12-26 22:40:34.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger - null null
+2024-12-26 22:40:34.284 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger - 302 0 null 12.9648ms
+2024-12-26 22:40:34.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-12-26 22:40:34.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 77.8471ms
+2024-12-26 22:40:34.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-12-26 22:40:34.597 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-12-26 22:40:35.018 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 511.9749ms
+2024-12-26 22:50:43.815 +05:30 [INF] Application is shutting down...
+2024-12-26 22:52:20.039 +05:30 [INF] Registered 30 endpoints in 1,669 milliseconds.
+2024-12-26 22:52:21.906 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE WHEN COUNT(*) = 0 THEN FALSE ELSE TRUE END
+FROM pg_class AS cls
+JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+WHERE
+        cls.relkind IN ('r', 'v', 'm', 'f', 'p') AND
+        ns.nspname NOT IN ('pg_catalog', 'information_schema') AND
+        -- Exclude tables which are members of PG extensions
+        NOT EXISTS (
+            SELECT 1 FROM pg_depend WHERE
+                classid=(
+                    SELECT cls.oid
+                    FROM pg_class AS cls
+                             JOIN pg_namespace AS ns ON ns.oid = cls.relnamespace
+                    WHERE relname='pg_class' AND ns.nspname='pg_catalog'
+                ) AND
+                objid=cls.oid AND
+                deptype IN ('e', 'x')
+        )
+2024-12-26 22:52:22.053 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS c)
+2024-12-26 22:52:22.087 +05:30 [INF] User profile is available. Using 'C:\Users\SreejithK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-26 22:52:22.225 +05:30 [INF] Now listening on: https://localhost:57679
+2024-12-26 22:52:22.227 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-26 22:52:22.230 +05:30 [INF] Hosting environment: Development
+2024-12-26 22:52:22.232 +05:30 [INF] Content root path: C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.web
+2024-12-26 22:52:22.281 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2024-12-26 22:52:22.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 105.7956ms
+2024-12-26 22:52:22.560 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2024-12-26 22:52:22.635 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2024-12-26 22:52:23.068 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 508.1314ms
+2024-12-26 22:53:27.246 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:57679/appraisal-feedback/update - application/json 206
+2024-12-26 22:53:27.253 +05:30 [INF] CORS policy execution failed.
+2024-12-26 22:53:27.254 +05:30 [INF] Request origin https://localhost:57679 does not have permission to access the resource.
+2024-12-26 22:53:27.259 +05:30 [INF] Executing endpoint 'HTTP: PUT /appraisal-feedback/update'
+2024-12-26 22:53:27.308 +05:30 [INF] Executed endpoint 'HTTP: PUT /appraisal-feedback/update'
+2024-12-26 22:53:27.310 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:57679/appraisal-feedback/update - 400 null application/problem+json; charset=utf-8 64.049ms
+2024-12-26 23:34:22.211 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/user/login - null null
+2024-12-26 23:34:22.216 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:22.220 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/user/login - 204 null null 8.8248ms
+2024-12-26 23:34:22.222 +05:30 [INF] Request starting HTTP/2 POST https://localhost:57679/user/login - application/json 50
+2024-12-26 23:34:22.232 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:22.234 +05:30 [INF] Executing endpoint 'HTTP: POST /user/login'
+2024-12-26 23:34:22.263 +05:30 [INF] Handling LoginCommand
+2024-12-26 23:34:22.265 +05:30 [INF] Property Email : gopika@gmail.com
+2024-12-26 23:34:22.268 +05:30 [INF] Property Password : gopika@1
+2024-12-26 23:34:22.447 +05:30 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2024-12-26 23:34:22.551 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@__email_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."CreatedOn", t."Email", t."EmployeeRoleId", t."FirstName", t."IsActive", t."LastName", t."ModifiedOn", t."PasswordHash", t."PhoneNumber", t0."EmployeeId", t0."SystemRoleId", t0."Id", t0.description, t0.role_name, t0."SystemRoleId0", t0."PermissionId", t0."Id0", t0."PermissionCode", t0."PermissionName"
+FROM (
+    SELECT e."Id", e."CreatedOn", e."Email", e."EmployeeRoleId", e."FirstName", e."IsActive", e."LastName", e."ModifiedOn", e."PasswordHash", e."PhoneNumber"
+    FROM employees AS e
+    WHERE e."Email" = @__email_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT e0."EmployeeId", e0."SystemRoleId", s."Id", s.description, s.role_name, t1."SystemRoleId" AS "SystemRoleId0", t1."PermissionId", t1."Id" AS "Id0", t1."PermissionCode", t1."PermissionName"
+    FROM employees_systemroles_mapping AS e0
+    INNER JOIN system_roles AS s ON e0."SystemRoleId" = s."Id"
+    LEFT JOIN (
+        SELECT s0."SystemRoleId", s0."PermissionId", p."Id", p."PermissionCode", p."PermissionName"
+        FROM systemrole_permissions AS s0
+        INNER JOIN permissions AS p ON s0."PermissionId" = p."Id"
+    ) AS t1 ON s."Id" = t1."SystemRoleId"
+) AS t0 ON t."Id" = t0."EmployeeId"
+ORDER BY t."Id", t0."EmployeeId", t0."SystemRoleId", t0."Id", t0."SystemRoleId0", t0."PermissionId"
+2024-12-26 23:34:23.211 +05:30 [INF] Handled LoginCommand with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.Login.LoginResponseDto] in 942 ms
+2024-12-26 23:34:23.216 +05:30 [INF] Executed endpoint 'HTTP: POST /user/login'
+2024-12-26 23:34:23.223 +05:30 [INF] Request finished HTTP/2 POST https://localhost:57679/user/login - 200 null application/json; charset=utf-8 1001.5375ms
+2024-12-26 23:34:25.524 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2024-12-26 23:34:25.524 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - null null
+2024-12-26 23:34:25.527 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:25.529 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:25.530 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 5.5272ms
+2024-12-26 23:34:25.531 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-cycles/active - 204 null null 6.8181ms
+2024-12-26 23:34:25.533 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2024-12-26 23:34:25.548 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:25.627 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2024-12-26 23:34:25.652 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2024-12-26 23:34:25.797 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2024-12-26 23:34:25.836 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 182 ms
+2024-12-26 23:34:25.845 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2024-12-26 23:34:25.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-cycles/active - null null
+2024-12-26 23:34:25.847 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 314.31ms
+2024-12-26 23:34:25.852 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:25.856 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-cycles/active'
+2024-12-26 23:34:25.858 +05:30 [INF] Handling GetActiveAppraisalCycleQuery
+2024-12-26 23:34:25.864 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."Quarter", a."Status", a."Year", a."AppraiseeDateRange_EndDate", a."AppraiseeDateRange_StartDate", a."AppraiserDateRange_EndDate", a."AppraiserDateRange_StartDate"
+FROM appraisal_cycle AS a
+2024-12-26 23:34:25.871 +05:30 [INF] Handled GetActiveAppraisalCycleQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalCycles.AppraisalCycleDTO] in 10 ms
+2024-12-26 23:34:25.873 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-cycles/active'
+2024-12-26 23:34:25.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-cycles/active - 200 null application/json; charset=utf-8 28.2836ms
+2024-12-26 23:34:31.783 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:34:31.786 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.788 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:34:31.788 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - 204 null null 4.2536ms
+2024-12-26 23:34:31.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:34:31.791 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.802 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - 204 null null 14.4438ms
+2024-12-26 23:34:31.802 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.808 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:34:31.818 +05:30 [INF] Handling AppraisalFeedbackQuery
+2024-12-26 23:34:31.820 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:34:31.822 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:34:31.840 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__cycleId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."FormId", a."Status", a."SummaryId"
+FROM appraisal_feedbacks AS a
+WHERE a."EmployeeId" = @__employeeId_0 AND a."CycleId" = @__cycleId_1
+LIMIT 1
+2024-12-26 23:34:31.868 +05:30 [INF] Handled AppraisalFeedbackQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalFeedbacks.AppraisalFeedbackDTO] in 45 ms
+2024-12-26 23:34:31.879 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:34:31.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - 200 null application/json; charset=utf-8 91.4857ms
+2024-12-26 23:34:31.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:34:31.885 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:34:31.891 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.894 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.896 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:34:31.898 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - 204 null null 13.0458ms
+2024-12-26 23:34:31.900 +05:30 [INF] Handling AppraisalFeedbackQuery
+2024-12-26 23:34:31.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:34:31.907 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:34:31.910 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:31.912 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:34:31.913 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:34:31.919 +05:30 [INF] Handling GetFormQuestionsQuery
+2024-12-26 23:34:31.919 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__cycleId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."FormId", a."Status", a."SummaryId"
+FROM appraisal_feedbacks AS a
+WHERE a."EmployeeId" = @__employeeId_0 AND a."CycleId" = @__cycleId_1
+LIMIT 1
+2024-12-26 23:34:31.920 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:34:31.923 +05:30 [INF] Handled AppraisalFeedbackQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalFeedbacks.AppraisalFeedbackDTO] in 8 ms
+2024-12-26 23:34:31.923 +05:30 [INF] Property EmployeeRoleId : 2
+2024-12-26 23:34:31.925 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:34:31.926 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:34:31.927 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - 200 null application/json; charset=utf-8 45.6999ms
+2024-12-26 23:34:31.955 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__appraisalCycleId_0='?' (DbType = Int32), @__employeeRoleId_1='?' (DbType = Int32), @__status_2='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AppraisalCycleId", t."EmployeeRoleId", t."Status", t0."AppraisalFormId", t0."QuestionId", t0."Id", t0."PerformanceIndicatorId", t0."QuestionText", t0."Status"
+FROM (
+    SELECT a."Id", a."AppraisalCycleId", a."EmployeeRoleId", a."Status"
+    FROM appraisal_form AS a
+    WHERE a."AppraisalCycleId" = @__appraisalCycleId_0 AND a."EmployeeRoleId" = @__employeeRoleId_1 AND a."Status" = @__status_2
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT a0."AppraisalFormId", a0."QuestionId", q."Id", q."PerformanceIndicatorId", q."QuestionText", q."Status"
+    FROM appraisal_form_question AS a0
+    INNER JOIN question AS q ON a0."QuestionId" = q."Id"
+) AS t0 ON t."Id" = t0."AppraisalFormId"
+ORDER BY t."Id", t0."AppraisalFormId", t0."QuestionId"
+2024-12-26 23:34:32.073 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[@__ids_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorId", p."IndicatorName", p."Weightage", p0."Id", p0."FactorName"
+FROM performance_indicator AS p
+INNER JOIN performance_factor AS p0 ON p."FactorId" = p0."Id"
+WHERE p."Id" = ANY (@__ids_0)
+2024-12-26 23:34:32.101 +05:30 [INF] Handled GetFormQuestionsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalForms.FormQuestionGroupedDTO] in 173 ms
+2024-12-26 23:34:32.111 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:34:32.113 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:34:32.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - 200 null application/json; charset=utf-8 212.9653ms
+2024-12-26 23:34:32.118 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:34:32.123 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:34:32.125 +05:30 [INF] Handling GetFormQuestionsQuery
+2024-12-26 23:34:32.126 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:34:32.128 +05:30 [INF] Property EmployeeRoleId : 2
+2024-12-26 23:34:32.130 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:34:32.135 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__appraisalCycleId_0='?' (DbType = Int32), @__employeeRoleId_1='?' (DbType = Int32), @__status_2='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AppraisalCycleId", t."EmployeeRoleId", t."Status", t0."AppraisalFormId", t0."QuestionId", t0."Id", t0."PerformanceIndicatorId", t0."QuestionText", t0."Status"
+FROM (
+    SELECT a."Id", a."AppraisalCycleId", a."EmployeeRoleId", a."Status"
+    FROM appraisal_form AS a
+    WHERE a."AppraisalCycleId" = @__appraisalCycleId_0 AND a."EmployeeRoleId" = @__employeeRoleId_1 AND a."Status" = @__status_2
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT a0."AppraisalFormId", a0."QuestionId", q."Id", q."PerformanceIndicatorId", q."QuestionText", q."Status"
+    FROM appraisal_form_question AS a0
+    INNER JOIN question AS q ON a0."QuestionId" = q."Id"
+) AS t0 ON t."Id" = t0."AppraisalFormId"
+ORDER BY t."Id", t0."AppraisalFormId", t0."QuestionId"
+2024-12-26 23:34:32.144 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__ids_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorId", p."IndicatorName", p."Weightage", p0."Id", p0."FactorName"
+FROM performance_indicator AS p
+INNER JOIN performance_factor AS p0 ON p."FactorId" = p0."Id"
+WHERE p."Id" = ANY (@__ids_0)
+2024-12-26 23:34:32.151 +05:30 [INF] Handled GetFormQuestionsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalForms.FormQuestionGroupedDTO] in 20 ms
+2024-12-26 23:34:32.154 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:34:32.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - 200 null application/json; charset=utf-8 42.5598ms
+2024-12-26 23:36:03.245 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/update - null null
+2024-12-26 23:36:03.252 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:36:03.254 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/update - 204 null null 8.9543ms
+2024-12-26 23:36:03.258 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:57679/appraisal-feedback/update - multipart/form-data; boundary=----WebKitFormBoundarys0uBfG0e7JXxwJxI 96098
+2024-12-26 23:36:03.265 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:36:03.270 +05:30 [INF] Executing endpoint '415 HTTP Unsupported Media Type'
+2024-12-26 23:36:03.275 +05:30 [INF] Executed endpoint '415 HTTP Unsupported Media Type'
+2024-12-26 23:36:03.277 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:57679/appraisal-feedback/update - 415 0 null 18.1664ms
+2024-12-26 23:38:22.410 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:38:22.413 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:22.414 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - 204 null null 4.5692ms
+2024-12-26 23:38:22.417 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:38:22.420 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:22.422 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:38:22.426 +05:30 [INF] Handling AppraisalFeedbackQuery
+2024-12-26 23:38:22.427 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:38:22.428 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:38:22.439 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__cycleId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."FormId", a."Status", a."SummaryId"
+FROM appraisal_feedbacks AS a
+WHERE a."EmployeeId" = @__employeeId_0 AND a."CycleId" = @__cycleId_1
+LIMIT 1
+2024-12-26 23:38:22.449 +05:30 [INF] Handled AppraisalFeedbackQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalFeedbacks.AppraisalFeedbackDTO] in 19 ms
+2024-12-26 23:38:22.453 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:38:22.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - 200 null application/json; charset=utf-8 40.3079ms
+2024-12-26 23:38:22.502 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:38:22.504 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:22.505 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - 204 null null 2.9334ms
+2024-12-26 23:38:22.507 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:38:22.510 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:22.511 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:38:22.514 +05:30 [INF] Handling GetFormQuestionsQuery
+2024-12-26 23:38:22.516 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:38:22.517 +05:30 [INF] Property EmployeeRoleId : 2
+2024-12-26 23:38:22.518 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:38:22.524 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__appraisalCycleId_0='?' (DbType = Int32), @__employeeRoleId_1='?' (DbType = Int32), @__status_2='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AppraisalCycleId", t."EmployeeRoleId", t."Status", t0."AppraisalFormId", t0."QuestionId", t0."Id", t0."PerformanceIndicatorId", t0."QuestionText", t0."Status"
+FROM (
+    SELECT a."Id", a."AppraisalCycleId", a."EmployeeRoleId", a."Status"
+    FROM appraisal_form AS a
+    WHERE a."AppraisalCycleId" = @__appraisalCycleId_0 AND a."EmployeeRoleId" = @__employeeRoleId_1 AND a."Status" = @__status_2
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT a0."AppraisalFormId", a0."QuestionId", q."Id", q."PerformanceIndicatorId", q."QuestionText", q."Status"
+    FROM appraisal_form_question AS a0
+    INNER JOIN question AS q ON a0."QuestionId" = q."Id"
+) AS t0 ON t."Id" = t0."AppraisalFormId"
+ORDER BY t."Id", t0."AppraisalFormId", t0."QuestionId"
+2024-12-26 23:38:22.532 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__ids_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorId", p."IndicatorName", p."Weightage", p0."Id", p0."FactorName"
+FROM performance_indicator AS p
+INNER JOIN performance_factor AS p0 ON p."FactorId" = p0."Id"
+WHERE p."Id" = ANY (@__ids_0)
+2024-12-26 23:38:22.539 +05:30 [INF] Handled GetFormQuestionsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalForms.FormQuestionGroupedDTO] in 19 ms
+2024-12-26 23:38:22.542 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:38:22.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - 200 null application/json; charset=utf-8 36.054ms
+2024-12-26 23:38:34.581 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:38:34.584 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:34.585 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - 204 null null 3.9247ms
+2024-12-26 23:38:34.588 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:38:34.594 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:34.595 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:38:34.597 +05:30 [INF] Handling AppraisalFeedbackQuery
+2024-12-26 23:38:34.598 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:38:34.600 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:38:34.603 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__cycleId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."FormId", a."Status", a."SummaryId"
+FROM appraisal_feedbacks AS a
+WHERE a."EmployeeId" = @__employeeId_0 AND a."CycleId" = @__cycleId_1
+LIMIT 1
+2024-12-26 23:38:34.607 +05:30 [INF] Handled AppraisalFeedbackQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalFeedbacks.AppraisalFeedbackDTO] in 5 ms
+2024-12-26 23:38:34.608 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:38:34.609 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - 200 null application/json; charset=utf-8 21.939ms
+2024-12-26 23:38:34.617 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:38:34.621 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:34.622 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - 204 null null 5.3542ms
+2024-12-26 23:38:34.625 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:38:34.629 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:38:34.631 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:38:34.633 +05:30 [INF] Handling GetFormQuestionsQuery
+2024-12-26 23:38:34.635 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:38:34.636 +05:30 [INF] Property EmployeeRoleId : 2
+2024-12-26 23:38:34.637 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:38:34.641 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__appraisalCycleId_0='?' (DbType = Int32), @__employeeRoleId_1='?' (DbType = Int32), @__status_2='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AppraisalCycleId", t."EmployeeRoleId", t."Status", t0."AppraisalFormId", t0."QuestionId", t0."Id", t0."PerformanceIndicatorId", t0."QuestionText", t0."Status"
+FROM (
+    SELECT a."Id", a."AppraisalCycleId", a."EmployeeRoleId", a."Status"
+    FROM appraisal_form AS a
+    WHERE a."AppraisalCycleId" = @__appraisalCycleId_0 AND a."EmployeeRoleId" = @__employeeRoleId_1 AND a."Status" = @__status_2
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT a0."AppraisalFormId", a0."QuestionId", q."Id", q."PerformanceIndicatorId", q."QuestionText", q."Status"
+    FROM appraisal_form_question AS a0
+    INNER JOIN question AS q ON a0."QuestionId" = q."Id"
+) AS t0 ON t."Id" = t0."AppraisalFormId"
+ORDER BY t."Id", t0."AppraisalFormId", t0."QuestionId"
+2024-12-26 23:38:34.650 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__ids_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorId", p."IndicatorName", p."Weightage", p0."Id", p0."FactorName"
+FROM performance_indicator AS p
+INNER JOIN performance_factor AS p0 ON p."FactorId" = p0."Id"
+WHERE p."Id" = ANY (@__ids_0)
+2024-12-26 23:38:34.654 +05:30 [INF] Handled GetFormQuestionsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalForms.FormQuestionGroupedDTO] in 15 ms
+2024-12-26 23:38:34.656 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:38:34.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - 200 null application/json; charset=utf-8 36.398ms
+2024-12-26 23:45:07.627 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:45:07.632 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:45:07.634 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback/16/22 - 204 null null 7.1408ms
+2024-12-26 23:45:07.636 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - null null
+2024-12-26 23:45:07.642 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:45:07.644 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:45:07.647 +05:30 [INF] Handling AppraisalFeedbackQuery
+2024-12-26 23:45:07.648 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:45:07.649 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:45:07.725 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__employeeId_0='?' (DbType = Int32), @__cycleId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AppraiserId", a."CreatedAt", a."CycleId", a."EmployeeId", a."FormId", a."Status", a."SummaryId"
+FROM appraisal_feedbacks AS a
+WHERE a."EmployeeId" = @__employeeId_0 AND a."CycleId" = @__cycleId_1
+LIMIT 1
+2024-12-26 23:45:07.728 +05:30 [INF] Handled AppraisalFeedbackQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalFeedbacks.AppraisalFeedbackDTO] in 77 ms
+2024-12-26 23:45:07.730 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-feedback/{EmployeeId:int}/{CycleId:int}'
+2024-12-26 23:45:07.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-feedback/16/22 - 200 null application/json; charset=utf-8 94.9491ms
+2024-12-26 23:45:07.734 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:45:07.736 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:45:07.737 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-forms/22/2/16/questions - 204 null null 3.2439ms
+2024-12-26 23:45:07.739 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - null null
+2024-12-26 23:45:07.742 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:45:07.743 +05:30 [INF] Executing endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:45:07.746 +05:30 [INF] Handling GetFormQuestionsQuery
+2024-12-26 23:45:07.747 +05:30 [INF] Property CycleId : 22
+2024-12-26 23:45:07.748 +05:30 [INF] Property EmployeeRoleId : 2
+2024-12-26 23:45:07.749 +05:30 [INF] Property EmployeeId : 16
+2024-12-26 23:45:07.757 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__appraisalCycleId_0='?' (DbType = Int32), @__employeeRoleId_1='?' (DbType = Int32), @__status_2='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AppraisalCycleId", t."EmployeeRoleId", t."Status", t0."AppraisalFormId", t0."QuestionId", t0."Id", t0."PerformanceIndicatorId", t0."QuestionText", t0."Status"
+FROM (
+    SELECT a."Id", a."AppraisalCycleId", a."EmployeeRoleId", a."Status"
+    FROM appraisal_form AS a
+    WHERE a."AppraisalCycleId" = @__appraisalCycleId_0 AND a."EmployeeRoleId" = @__employeeRoleId_1 AND a."Status" = @__status_2
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT a0."AppraisalFormId", a0."QuestionId", q."Id", q."PerformanceIndicatorId", q."QuestionText", q."Status"
+    FROM appraisal_form_question AS a0
+    INNER JOIN question AS q ON a0."QuestionId" = q."Id"
+) AS t0 ON t."Id" = t0."AppraisalFormId"
+ORDER BY t."Id", t0."AppraisalFormId", t0."QuestionId"
+2024-12-26 23:45:07.764 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__ids_0='?' (DbType = Object)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."Id", p."FactorId", p."IndicatorName", p."Weightage", p0."Id", p0."FactorName"
+FROM performance_indicator AS p
+INNER JOIN performance_factor AS p0 ON p."FactorId" = p0."Id"
+WHERE p."Id" = ANY (@__ids_0)
+2024-12-26 23:45:07.766 +05:30 [INF] Handled GetFormQuestionsQuery with Ardalis.Result.Result`1[Bytestrone.AppraisalSystem.UseCases.AppraisalForms.FormQuestionGroupedDTO] in 15 ms
+2024-12-26 23:45:07.768 +05:30 [INF] Executed endpoint 'HTTP: GET /appraisal-forms/{CycleId:int}/{EmployeeRoleId:int}/{EmployeeId:int}/questions'
+2024-12-26 23:45:07.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/appraisal-forms/22/2/16/questions - 200 null application/json; charset=utf-8 29.822ms
+2024-12-26 23:46:28.357 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback - null null
+2024-12-26 23:46:28.362 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:46:28.364 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:57679/appraisal-feedback - 204 null null 7.6022ms
+2024-12-26 23:46:28.369 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:57679/appraisal-feedback - multipart/form-data; boundary=----WebKitFormBoundary4bJTQALnkTQcvIJk 95719
+2024-12-26 23:46:28.379 +05:30 [INF] CORS policy execution successful.
+2024-12-26 23:46:28.381 +05:30 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-26 23:46:28.384 +05:30 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-26 23:46:28.386 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:57679/appraisal-feedback - 405 0 null 17.7507ms

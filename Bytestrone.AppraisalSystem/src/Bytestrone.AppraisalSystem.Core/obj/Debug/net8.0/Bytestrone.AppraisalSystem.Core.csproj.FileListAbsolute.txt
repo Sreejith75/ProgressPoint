@@ -1,0 +1,13 @@
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\bin\Debug\net8.0\Bytestrone.AppraisalSystem.Core.deps.json
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\bin\Debug\net8.0\Bytestrone.AppraisalSystem.Core.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\bin\Debug\net8.0\Bytestrone.AppraisalSystem.Core.pdb
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.csproj.AssemblyReference.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.AssemblyInfoInputs.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.AssemblyInfo.cs
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.sourcelink.json
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\refint\Bytestrone.AppraisalSystem.Core.dll
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\Bytestrone.AppraisalSystem.Core.pdb
+C:\Users\SreejithK\code\sreejith.k\AppraisalSystem\Bytestrone.AppraisalSystem\src\Bytestrone.AppraisalSystem.Core\obj\Debug\net8.0\ref\Bytestrone.AppraisalSystem.Core.dll
