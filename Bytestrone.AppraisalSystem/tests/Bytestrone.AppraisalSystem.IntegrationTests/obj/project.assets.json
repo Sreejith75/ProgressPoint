@@ -7398,18 +7398,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\Bytestrone.AppraisalSystem.IntegrationTests.csproj",
+      "projectUniqueName": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\Bytestrone.AppraisalSystem.IntegrationTests.csproj",
       "projectName": "Bytestrone.AppraisalSystem.IntegrationTests",
-      "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\Bytestrone.AppraisalSystem.IntegrationTests.csproj",
+      "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\Bytestrone.AppraisalSystem.IntegrationTests.csproj",
       "packagesPath": "C:\\Users\\SreejithK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\obj\\",
+      "outputPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.IntegrationTests\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
+        "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\NuGet.Config",
         "C:\\Users\\SreejithK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -7424,11 +7424,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj"
+            "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj"
             },
-            "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.UnitTests\\Bytestrone.AppraisalSystem.UnitTests.csproj": {
-              "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.UnitTests\\Bytestrone.AppraisalSystem.UnitTests.csproj"
+            "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.UnitTests\\Bytestrone.AppraisalSystem.UnitTests.csproj": {
+              "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\tests\\Bytestrone.AppraisalSystem.UnitTests\\Bytestrone.AppraisalSystem.UnitTests.csproj"
             }
           }
         }

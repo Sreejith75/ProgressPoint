@@ -9293,18 +9293,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\Bytestrone.AppraisalSystem.Web.csproj",
+      "projectUniqueName": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\Bytestrone.AppraisalSystem.Web.csproj",
       "projectName": "Bytestrone.AppraisalSystem.Web",
-      "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\Bytestrone.AppraisalSystem.Web.csproj",
+      "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\Bytestrone.AppraisalSystem.Web.csproj",
       "packagesPath": "C:\\Users\\SreejithK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.web\\obj\\",
+      "outputPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Web\\obj\\",
       "projectStyle": "PackageReference",
       "centralPackageVersionsManagementEnabled": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\NuGet.Config",
+        "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\NuGet.Config",
         "C:\\Users\\SreejithK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -9319,11 +9319,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj"
+            "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.Infrastructure\\Bytestrone.AppraisalSystem.Infrastructure.csproj"
             },
-            "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj": {
-              "projectPath": "C:\\Users\\SreejithK\\code\\sreejith.k\\AppraisalSystem\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj"
+            "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj": {
+              "projectPath": "C:\\Users\\SreejithK\\Desktop\\ProgressPoint_Production\\ProgressPoint\\Bytestrone.AppraisalSystem\\src\\Bytestrone.AppraisalSystem.UseCases\\Bytestrone.AppraisalSystem.UseCases.csproj"
             }
           }
         }
