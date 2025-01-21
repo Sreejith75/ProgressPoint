@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Bytestrone.AppraisalSystem.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+584d461575ee7c765600d69ed2b8d551437c3f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0477e225420e618df81fb2a9d4b2b819161c09fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bytestrone.AppraisalSystem.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bytestrone.AppraisalSystem.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

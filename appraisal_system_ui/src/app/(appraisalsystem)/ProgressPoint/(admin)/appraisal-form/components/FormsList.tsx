@@ -48,7 +48,7 @@ const FormList: React.FC = () => {
       );
       toast.success(`Status updated to ${newStatus}!`);
     } catch (error) {
-      // console.error('Error updating form status:', error);
+      console.log('Error updating form status:', error);
       toast.error(`Status update failed`);
 
     }

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import {
   FaCog,
   FaUser,
@@ -10,12 +9,10 @@ import {
   FaHistory,
   FaQuestionCircle,
   FaFileAlt,
-  FaSignOutAlt,
   FaClipboardList,
   FaHome,
 } from "react-icons/fa";
 import Link from "next/link";
-import Logout from "./Logout";
 
 type MenuItem = {
   permission: string;
@@ -101,7 +98,6 @@ const MENU_CONFIG: MenuItem[] = [
 
 const Sidebar = () => {
   const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
-  const router = useRouter();
 
   useEffect(() => {
     const fetchPermissions = () => {

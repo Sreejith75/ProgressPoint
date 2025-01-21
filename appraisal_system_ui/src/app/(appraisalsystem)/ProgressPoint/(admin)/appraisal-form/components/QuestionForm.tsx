@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import axiosInstance from '@/services/axiosInterceptor';
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const baseApiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 interface Role {
   id: number;
@@ -26,7 +25,6 @@ interface RoleBasedFormProps {
 const RoleBasedForm: React.FC<RoleBasedFormProps> = ({
   roles,
   questions,
-  setQuestions,
 }) => {
   const [selectedRoleId, setSelectedRoleId] = useState<number | null>(null);
   const [selectedQuestions, setSelectedQuestions] = useState<Set<number>>(new Set());
@@ -46,7 +44,7 @@ const RoleBasedForm: React.FC<RoleBasedFormProps> = ({
       return updated;
     });
   };
-  
+
 
   const handleSaveForm = async () => {
     if (!selectedRoleId) {
@@ -71,7 +69,7 @@ const RoleBasedForm: React.FC<RoleBasedFormProps> = ({
         setSelectedQuestions(new Set());
       }
     } catch (error) {
-      // console.error('Error saving form:', error);
+      console.log('Error saving form:', error);
       setError('An error occurred while saving the form.');
     } finally {
       setLoading(false);

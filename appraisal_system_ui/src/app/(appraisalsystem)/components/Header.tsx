@@ -7,7 +7,7 @@ const Header = () => {
   useEffect(()=>{
     const userName=localStorage.getItem("username")
     setUserName(userName);
-  });
+  },[]);
   
   return (
     <div className="bg-white shadow-md flex justify-between items-center px-6 py-2 relative z-30">

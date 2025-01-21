@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Menu } from "primereact/menu";
 import { MenuItem } from "primereact/menuitem";
-import { Button } from "primereact/button";
 import Link from "next/link";
 import { FaSignOutAlt } from "react-icons/fa";  // Importing logout icon
 
@@ -14,7 +13,7 @@ const CustomMenu = ({ userName }: MenuProps) => {
 
   const items: MenuItem[] = [
     {
-      template: (item, options) => (
+      template: ( options) => (
         <Link href="/ProgressPoint/profile">
           <div className={`${options.className} flex items-center p-3 hover:bg-blue-100 rounded-md`}>
             <i className="pi pi-user mr-2"></i> Profile
@@ -23,7 +22,7 @@ const CustomMenu = ({ userName }: MenuProps) => {
       ),
     },
     {
-      template: (item, options) => (
+      template: ( options) => (
         <Link href="/settings">
           <div className={`${options.className} flex items-center p-3 hover:bg-blue-100 rounded-md`}>
             <i className="pi pi-cog mr-2"></i> Settings
@@ -33,7 +32,7 @@ const CustomMenu = ({ userName }: MenuProps) => {
     },
     {
       // Logout menu item
-      template: (item, options) => (
+      template: ( options) => (
         <div
           className={`${options.className} flex items-center p-3 cursor-pointer text-red-600 rounded-md hover:bg-blue-100`}
           onClick={handleLogout}
